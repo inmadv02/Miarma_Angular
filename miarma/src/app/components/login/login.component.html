@@ -1,0 +1,21 @@
+<div fxLayoutAlign="space-evenly center">
+    <mat-card class="example-card">
+        <form fxLayout="column" fxLayoutAlign="space-evenly center">
+            <h1>Miarmagram</h1>
+            <mat-form-field appearance="legacy" class="margen">
+                <input id="nickname" type="text" matInput placeholder="Nombre de usuario" [(ngModel)]="login.nickname"
+                    name="nickname">
+            </mat-form-field>
+
+            <mat-form-field appearance="standard">
+                <input id="password" type="password" matInput placeholder="Contraseña" [(ngModel)]="login.password"
+                    name="password">
+            </mat-form-field>
+            <button mat-raised-button class="enviar" (click)="submitt()">Iniciar sesión</button>
+        </form>
+
+        <div fxLayoutAlign="space-evenly center">
+            <p>¿No tienes cuenta? <a href="/register">Regístrate</a></p>
+        </div>
+    </mat-card>
+</div>
