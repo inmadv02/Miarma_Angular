@@ -6,6 +6,10 @@ h1 {
     margin: 1%;
 }
 
+.color {
+    background: linear-gradient(90deg, rgba(8,0,136,1) 0%, rgba(6,82,166,1) 25%, rgba(34,218,255,0.9587694697019433) 84%);
+}
+
 button {
     margin-top: 3%;
     background-color: rgb(56, 151, 241);
@@ -25,7 +29,8 @@ mat-card div {
     margin-top: 3%;
 }
 
-div {
-   margin-top: 6%;
-
+.caja {
+    margin-left: 40%;
 }
+
+
