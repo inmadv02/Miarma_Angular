@@ -13,6 +13,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PostItemComponent } from './components/post-item/post-item.component';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
+import { UserItemComponent } from './components/user-item/user-item.component';
+import { UserListsComponent } from './components/user-lists/user-lists.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { PostsListComponent } from './components/posts-list/posts-list.component
     RegisterComponent,
     AppBarComponent,
     PostItemComponent,
-    PostsListComponent
+    PostsListComponent,
+    UserItemComponent,
+    UserListsComponent
   ],
   imports: [
     BrowserModule,

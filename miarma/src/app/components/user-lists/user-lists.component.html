@@ -1,0 +1,4 @@
+<app-app-bar style="box-shadow: 10px 10px rgba(0,0,0,0.5);"></app-app-bar>
+<div fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <app-user-item *ngFor="let user of users; let i = index" [userInput]="user"></app-user-item>
+</div>
