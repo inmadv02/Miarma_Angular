@@ -1,1 +1,15 @@
-<p>post-item works!</p>
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"><img src="{{postInput.fotoPerfil}}"></div>
+      <mat-card-title>{{postInput.titulo}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{postInput.urlFoto1}}" alt="Post">
+    <mat-card-content>
+      <p>
+        {{postInput.texto}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button><mat-icon>delete</mat-icon></button>
+    </mat-card-actions>
+  </mat-card>

@@ -33,4 +33,13 @@ mat-card div {
     margin-left: 40%;
 }
 
+div p {
+    margin-top: 6%;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(0, 50, 97);
+    font-weight: bold;
+}
 

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { PostDTO } from 'src/app/interfaces/post/postDTO';
+import { Post, PostResponse } from 'src/app/interfaces/post/post_response';
 
 @Component({
   selector: 'app-post-item',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-item.component.css']
 })
 export class PostItemComponent implements OnInit {
+
+  @Input() postInput!: Post;
 
   constructor() { }
 

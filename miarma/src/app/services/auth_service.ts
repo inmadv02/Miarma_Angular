@@ -10,7 +10,7 @@ import { RegisterResponse } from '../interfaces/register/register_response';
 const URL = 'auth';
 const DEFAULT_HEADERS = {
   headers: new HttpHeaders({
-    'Content-Type': 'multipart/form-data',
+    'Content-Type': 'application/json',
   })
 };
 
@@ -30,7 +30,7 @@ export class AuthService {
 
   login(loginDTO : LoginDTO): Observable<LoginResponse> {
     let requestUrl = `${this.authBaseUrl}/login`;
-
     return this.http.post<LoginResponse>(requestUrl, loginDTO, DEFAULT_HEADERS);
+    
   }
 }
