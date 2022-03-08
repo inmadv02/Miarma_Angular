@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+span {
+    font-family: 'Lobster Two', cursive;
+}

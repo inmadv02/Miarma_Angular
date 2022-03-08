@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PostDTO } from 'src/app/interfaces/post/postDTO';
 import { Post, PostResponse } from 'src/app/interfaces/post/post_response';
+import { PostServiceService } from 'src/app/services/post-service.service';
 
 @Component({
   selector: 'app-post-item',
@@ -11,9 +12,13 @@ export class PostItemComponent implements OnInit {
 
   @Input() postInput!: Post;
 
-  constructor() { }
+  constructor(private postService : PostServiceService) { }
 
   ngOnInit(): void {
+  }
+
+  deletePost(id : number){
+    this.postService.deletePosts(id).subscribe(() => {location.reload()});
   }
 
 }

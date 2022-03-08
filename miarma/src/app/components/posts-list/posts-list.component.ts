@@ -14,13 +14,17 @@ export class PostsListComponent implements OnInit {
   constructor(private postService : PostServiceService) { }
 
   ngOnInit(): void {
-    this.getPostsList()
+    this.getPostsList();
   }
   
   getPostsList(){
     this.postService.getPosts().subscribe(result => {
       this.postsList = result.content;
     })
+  }
+
+  deletePost(id : number){
+    this.postService.deletePosts(id).subscribe(location.reload);
   }
 
 }

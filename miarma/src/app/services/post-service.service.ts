@@ -23,7 +23,7 @@ export class PostServiceService {
     return this.http.get<PostResponse>(`${API_BASE_URL}/${URL}/all`, {headers: headers});
   }
 
-  deletePosts(id : number){
-    this.http.delete(`${API_BASE_URL}/${URL}/admin/${id}`, {headers: headers});
+  deletePosts(id : number) {
+    return this.http.delete(`${API_BASE_URL}/${URL}/admin/${id}`, {headers: headers});
   }
 }

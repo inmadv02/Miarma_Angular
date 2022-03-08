@@ -1,0 +1,7 @@
+div img{
+    width: 100%;
+}
+
+mat-icon:hover{
+    color: rgb(233, 0, 0);
+}

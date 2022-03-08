@@ -1,3 +1,4 @@
-<ul>hola
+<app-app-bar style="box-shadow: 10px 10px rgba(0,0,0,0.5);"></app-app-bar>
+<div fxLayout="row wrap" fxLayoutAlign="space-around center">
     <app-post-item *ngFor="let post of postsList; let i = index" [postInput]="post"></app-post-item>
-</ul>
+</div>
