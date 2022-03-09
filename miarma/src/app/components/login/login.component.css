@@ -16,6 +16,12 @@ button {
     color: white;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .margen{
     margin-top: 2%;
 }
@@ -42,4 +48,5 @@ a {
     color:rgb(0, 50, 97);
     font-weight: bold;
 }
+
 

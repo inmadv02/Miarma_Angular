@@ -7,3 +7,7 @@
 span {
     font-family: 'Lobster Two', cursive;
 }
+
+div button {
+  padding: 3%;
+}
